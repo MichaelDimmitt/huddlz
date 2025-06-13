@@ -48,6 +48,12 @@ Huddlz follows a streamlined development process optimized for solo development 
 
 See [Development Lifecycle](docs/development_lifecycle.md) for detailed information.
 
+## Developer Setup - (current default) "To make micah style pr's!"
+1. 100$ month claude plan
+2. make sure mcp.json is up to date
+3. vscode (optional) - you can run claude commands from terminal
+4. ghostty terminal (optional)
+
 ### Testing
 
 * Run all tests: `mix test`
