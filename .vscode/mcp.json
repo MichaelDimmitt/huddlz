@@ -11,6 +11,10 @@
                 "-y",
                 "@upstash/context7-mcp@latest"
             ]
+        },
+        "puppeteer": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
         }
     }
 }
