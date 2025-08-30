@@ -77,6 +77,9 @@ defmodule HuddlzWeb.HuddlLive.Show do
               <.icon name="hero-trash" class="h-4 w-4" /> Delete Huddl
             </button>
           <% end %>
+          <%= if !@current_user && @huddl.status == :upcoming do %>
+            <a href={"/register/?redirect_url=#{@huddl.group.slug}/huddlz/#{@huddl.id}"} class="btn btn-primary btn-soft">Auth and RSVP</a>
+          <% end %>
           <%= if @current_user && @huddl.status == :upcoming do %>
             <%= if @has_rsvped do %>
               <div class="flex items-center gap-4">
